@@ -17,7 +17,7 @@ char *str_cpy(char *str) {
     int lenght;
     int count=0;
     lenght = str_len(str);
-    cpy = malloc(lenght+1 * sizeof(char)); 
+    cpy = malloc((lenght+1) * sizeof(char)); 
     cpy[lenght] = '\0';
     while (count < lenght) {
         cpy[count]=str[count];
